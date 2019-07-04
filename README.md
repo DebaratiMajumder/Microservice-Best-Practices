@@ -1,4 +1,6 @@
-# Microservice_Best_Practice_1
+# Microservice Best Practices:
+
+
 This project could be used for three best practices while writing microservices: 
 
 1. Feign Client : Earlier we used to write lots of code extending the class of RestTemplate whenever we want to make REST calls and manage the request, response and properties used for REST calls. As we know, whenever the lines of code increases, the maintenance of that code becomes a bit more difficult. To cover each of the lines, we need to write junit test cases too. But all these lines of code can be avoided using Feign clients. All we need to write is just an interface with method declarations which should have mapping method and the URL annotated. The properties used for REST call (maximum number of connections, time out values) could be configured through yml or properties file.  
