@@ -24,6 +24,6 @@ public class WeatherServicesExceptionHandler
 public class WeatherApplication
 
 @Cacheable(value = "LocationList")
-    @Retryable(maxAttemptsExpression = "#{${max.retry.attempts.locations:2}}")
-	public String getLocations(String weatherToken)
+@Retryable(maxAttemptsExpression = "#{${max.retry.attempts.locations:2}}")
+public String getLocations(String weatherToken)
 ```
