@@ -1,5 +1,12 @@
   # Microservice Best Practices
 
+Please note that have used some APIs of NCDC Data Access APIs for back-end calls which need a token. The value of the property below in /src/main/resources/application.properties won't work because I don't want to share my token and I have changed the value of the property below:
+
+weather.token=
+
+Anyone who wants to test NCDC weather APIs can go to the link below, provide his/her email address, receive the token in email and use that for the property above:
+
+https://www.ncdc.noaa.gov/cdo-web/token
 
 This project could be used for three best practices while writing microservices: 
 
